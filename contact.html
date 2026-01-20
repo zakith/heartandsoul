@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Heart and Soul</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Heart & Soul</a>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Get In Touch</h1>
+            <p>We'd love to hear from you. Visit us or drop us a line!</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" style="background-color: var(--light-cream);">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Send Us a Message</h2>
+                    <p style="margin-bottom: 2rem; color: var(--warm-gray);">Have a question or want to make a reservation? Fill out the form below.</p>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(719) 555-0123">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="reservation">Reservation Request</option>
+                                <option value="catering">Catering Inquiry</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="general">General Question</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell us more..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-container">
+                    <h2>Visit Us</h2>
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <div class="info-icon" style="background-color: var(--primary-red);">📍</div>
+                            <h3>Location</h3>
+                            <p>123 Main Street<br>Pueblo, CO 81001</p>
+                            <a href="https://maps.google.com" target="_blank" class="info-link">Get Directions →</a>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon" style="background-color: var(--warm-orange);">📞</div>
+                            <h3>Phone</h3>
+                            <p>(719) 555-SOUL<br>(719) 555-7685</p>
+                            <a href="tel:7195557685" class="info-link">Call Us →</a>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon" style="background-color: var(--accent-gold);">✉️</div>
+                            <h3>Email</h3>
+                            <p>info@heartandsoulpueblo.com</p>
+                            <a href="mailto:info@heartandsoulpueblo.com" class="info-link">Send Email →</a>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon" style="background-color: var(--secondary-burgundy);">🕐</div>
+                            <h3>Hours</h3>
+                            <p><strong>Mon - Thu:</strong> 11am - 8pm<br>
+                            <strong>Fri - Sat:</strong> 11am - 9pm<br>
+                            <strong>Sunday:</strong> 12pm - 7pm</p>
+                        </div>
+                    </div>
+
+                    <!-- Map Placeholder -->
+                    <div class="map-container">
+                        <div class="map-placeholder">
+                            <p>📍 Interactive Map</p>
+                            <p style="font-size: 0.9rem; margin-top: 0.5rem;">Replace with Google Maps embed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" style="background-color: white;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <h3>Do you take reservations?</h3>
+                    <p>Yes! While walk-ins are welcome, we recommend calling ahead for parties of 6 or more, especially on weekends.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you offer catering services?</h3>
+                    <p>Absolutely! We cater events of all sizes. Contact us for a custom quote and menu options.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Are there vegetarian options available?</h3>
+                    <p>Yes, we offer several vegetarian sides and can accommodate dietary restrictions. Please let us know your needs.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you offer takeout and delivery?</h3>
+                    <p>Yes! We offer takeout for all menu items. Delivery is available through third-party services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section" style="background: linear-gradient(135deg, var(--primary-red), var(--secondary-burgundy)); color: white; text-align: center;">
+        <div class="container">
+            <h2 style="color: white; margin-bottom: 1rem;">Ready to Taste the Difference?</h2>
+            <p style="color: var(--cream); font-size: 1.2rem; margin-bottom: 2rem;">Come visit us today and experience authentic soul food</p>
+            <a href="menu.html" class="btn btn-gold">View Our Menu</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Heart & Soul</h3>
+                <p>Authentic soul food in the heart of Pueblo, Colorado. Serving our community with love since day one.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hours</h3>
+                <p>Monday - Thursday: 11am - 8pm</p>
+                <p>Friday - Saturday: 11am - 9pm</p>
+                <p>Sunday: 12pm - 7pm</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>123 Main Street</p>
+                <p>Pueblo, CO 81001</p>
+                <p>Phone: (719) 555-SOUL</p>
+                <p>Email: info@heartandsoulpueblo.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">f</a>
+                    <a href="#" aria-label="Instagram">📷</a>
+                    <a href="#" aria-label="Twitter">🐦</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Heart & Soul Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
