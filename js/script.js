@@ -175,21 +175,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Collect gallery data
     galleryItems.forEach((item, index) => {
-      const img = item.querySelector('.gallery-img');
-      const placeholder = item.querySelector('.gallery-image');
-      const title = item.querySelector('.gallery-overlay h3').textContent;
-      const description = item.querySelector('.gallery-overlay p').textContent;
-
-      // Store image source (use placeholder gradient if image fails)
-      const imgSrc = img ? img.src : '';
-      const hasImage = img && !img.style.display;
+      const img = item.querySelector('img');
+      const title = item.dataset.title || item.querySelector('.gallery-overlay h3')?.textContent || '';
+      const description = item.dataset.description || item.querySelector('.gallery-overlay p')?.textContent || '';
 
       galleryData.push({
-        src: imgSrc,
+        src: img.src,
+        alt: img.alt,
         title: title,
-        description: description,
-        hasImage: hasImage,
-        element: item
+        description: description
       });
 
       // Add click event to gallery item
@@ -218,41 +212,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Update lightbox content
     function updateLightboxContent() {
       const item = galleryData[currentIndex];
-
-      // If image exists, use it; otherwise, create a placeholder
-      if (item.hasImage && item.src) {
-        lightboxImg.src = item.src;
-        lightboxImg.style.display = 'block';
-      } else {
-        // Create a canvas placeholder for missing images
-        const canvas = document.createElement('canvas');
-        canvas.width = 800;
-        canvas.height = 600;
-        const ctx = canvas.getContext('2d');
-
-        // Get gradient from the original element
-        const placeholder = item.element.querySelector('.gallery-image');
-        const style = window.getComputedStyle(placeholder);
-        const background = style.background || style.backgroundColor;
-
-        // Draw gradient background
-        const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
-        gradient.addColorStop(0, '#E53935');
-        gradient.addColorStop(1, '#B71C1C');
-        ctx.fillStyle = gradient;
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-        // Draw text
-        ctx.fillStyle = 'white';
-        ctx.font = 'bold 48px sans-serif';
-        ctx.textAlign = 'center';
-        ctx.textBaseline = 'middle';
-        ctx.fillText(item.title, canvas.width / 2, canvas.height / 2);
-
-        lightboxImg.src = canvas.toDataURL();
-        lightboxImg.style.display = 'block';
-      }
-
+      lightboxImg.src = item.src;
+      lightboxImg.alt = item.alt;
       lightboxTitle.textContent = item.title;
       lightboxDescription.textContent = item.description;
       lightboxCurrent.textContent = currentIndex + 1;
