@@ -1,14 +1,5 @@
 /* Heart and Soul Restaurant - Main Styles */
 
-/* Custom Font */
-@font-face {
-  font-family: 'Trend Sans';
-  src: url('https://static.parastorage.com/fonts/v2/5f456a47-a870-4626-bedc-13c20ea75b36/v1/trend-sans-w00-four.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
 :root {
   /* Core Brand Colors */
   --primary-teal: #00B3A6;        /* Primary brand color - logo, buttons, links, icons, hover states */
@@ -16,19 +7,20 @@
   --near-black: #121517;          /* Overlays, footer, deep shadows, highest contrast areas */
   --light-gray: #E6E6E6;          /* Dividers, subtle borders, secondary text on light areas */
   --white: #FFFFFF;               /* Headings/body copy on dark backgrounds */
+  --accent-bronze: #b67339;       /* Common accent color for highlights and emphasis */
 
   /* Mapped variables for compatibility */
   --primary-red: var(--primary-teal);
   --secondary-burgundy: var(--near-black);
-  --accent-gold: var(--primary-teal);
-  --warm-orange: var(--primary-teal);
+  --accent-gold: var(--accent-bronze);
+  --warm-orange: var(--accent-bronze);
   --cream: var(--white);
   --light-cream: var(--light-gray);
   --charcoal: var(--deep-charcoal);
   --warm-gray: #9CA3AF;           /* Adjusted gray for secondary text */
 
   /* Typography */
-  --font-heading: 'Trend Sans', sans-serif;
+  --font-heading: 'Lexend Giga', sans-serif;
   --font-body: 'Open Sans', sans-serif;
 
   /* Spacing */
