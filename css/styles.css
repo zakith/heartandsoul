@@ -1,15 +1,22 @@
 /* Heart and Soul Restaurant - Main Styles */
 
 :root {
-  /* Color Palette - Warm and Inviting */
-  --primary-red: #8B2635;
-  --secondary-burgundy: #5C1A28;
-  --accent-gold: #D4AF37;
-  --warm-orange: #E07A5F;
-  --cream: #F4F1DE;
-  --light-cream: #FAF8F3;
-  --charcoal: #2D2D2D;
-  --warm-gray: #5A5A5A;
+  /* Core Brand Colors */
+  --primary-teal: #00B3A6;        /* Primary brand color - logo, buttons, links, icons, hover states */
+  --deep-charcoal: #1F2426;       /* Main page background, dark sections, nav background */
+  --near-black: #121517;          /* Overlays, footer, deep shadows, highest contrast areas */
+  --light-gray: #E6E6E6;          /* Dividers, subtle borders, secondary text on light areas */
+  --white: #FFFFFF;               /* Headings/body copy on dark backgrounds */
+
+  /* Mapped variables for compatibility */
+  --primary-red: var(--primary-teal);
+  --secondary-burgundy: var(--near-black);
+  --accent-gold: var(--primary-teal);
+  --warm-orange: var(--primary-teal);
+  --cream: var(--white);
+  --light-cream: var(--light-gray);
+  --charcoal: var(--deep-charcoal);
+  --warm-gray: #9CA3AF;           /* Adjusted gray for secondary text */
 
   /* Typography */
   --font-heading: 'Playfair Display', serif;
@@ -59,8 +66,8 @@ p {
 
 /* Navigation */
 .navbar {
-  background-color: white;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  background-color: var(--deep-charcoal);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -78,7 +85,7 @@ p {
 .logo {
   font-family: var(--font-heading);
   font-size: 1.8rem;
-  color: var(--primary-red);
+  color: var(--primary-teal);
   text-decoration: none;
   font-weight: 700;
 }
@@ -91,7 +98,7 @@ p {
 
 .nav-links a {
   text-decoration: none;
-  color: var(--charcoal);
+  color: var(--white);
   font-weight: 500;
   transition: var(--transition);
   position: relative;
@@ -104,7 +111,7 @@ p {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: var(--accent-gold);
+  background-color: var(--primary-teal);
   transition: var(--transition);
 }
 
@@ -115,7 +122,7 @@ p {
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: var(--primary-red);
+  color: var(--primary-teal);
 }
 
 /* Mobile Menu Toggle */
@@ -129,7 +136,7 @@ p {
 .menu-toggle span {
   width: 25px;
   height: 3px;
-  background-color: var(--primary-red);
+  background-color: var(--white);
   transition: var(--transition);
 }
 
@@ -184,9 +191,9 @@ p {
 }
 
 .btn-primary:hover {
-  background-color: var(--secondary-burgundy);
+  background-color: #009688;
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(139, 38, 53, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 179, 166, 0.3);
 }
 
 .btn-secondary {
@@ -206,9 +213,9 @@ p {
 }
 
 .btn-gold:hover {
-  background-color: #C49B2E;
+  background-color: #009688;
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 179, 166, 0.3);
 }
 
 /* Container */
@@ -350,7 +357,7 @@ footer {
   text-align: center;
   padding-top: 2rem;
   margin-top: 2rem;
-  border-top: 1px solid rgba(244, 241, 222, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   color: var(--cream);
 }
 

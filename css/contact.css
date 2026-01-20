@@ -62,7 +62,7 @@
 .form-group select,
 .form-group textarea {
   padding: 0.8rem 1rem;
-  border: 2px solid #E0E0E0;
+  border: 2px solid var(--light-gray);
   border-radius: 5px;
   font-family: var(--font-body);
   font-size: 1rem;
@@ -203,16 +203,16 @@
 }
 
 .form-message.success {
-  background-color: #d4edda;
-  border: 1px solid #c3e6cb;
-  color: #155724;
+  background-color: rgba(0, 179, 166, 0.1);
+  border: 1px solid var(--primary-teal);
+  color: var(--deep-charcoal);
   display: block;
 }
 
 .form-message.error {
-  background-color: #f8d7da;
-  border: 1px solid #f5c6cb;
-  color: #721c24;
+  background-color: rgba(239, 68, 68, 0.1);
+  border: 1px solid #EF4444;
+  color: var(--deep-charcoal);
   display: block;
 }
 
