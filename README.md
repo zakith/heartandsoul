@@ -1,167 +1,217 @@
-# heartandsoul
+# Heart & Soul Restaurant Website
 
-A concise description: heartandsoul is a project that [briefly describe purpose — e.g., "helps users manage personal wellness routines" or "provides a library for X"]. Replace this line with a one-sentence summary of what this repository does.
+A modern, engaging website redesign for Heart & Soul Restaurant in Pueblo, Colorado - featuring authentic soul food with a warm, inviting design.
 
 ## Table of contents
 - [About](#about)
+- [Design Overview](#design-overview)
 - [Features](#features)
-- [Tech / Languages](#tech--languages)
+- [Tech Stack](#tech-stack)
 - [Getting started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-  - [Configuration](#configuration)
   - [Run locally](#run-locally)
-- [Usage](#usage)
-- [Development](#development)
-- [Testing](#testing)
-- [Contributing](#contributing)
-- [Roadmap](#roadmap)
-- [License](#license)
+- [Pages](#pages)
+- [Customization](#customization)
+- [Deployment](#deployment)
 - [Contact](#contact)
 
 ## About
-Provide a short description of the project's goals, target audience, and high-level architecture. Add any relevant background context or motivation for this project.
 
-Example:
-- Purpose: Build a simple, maintainable app/service that does X.
-- High-level: Backend provides APIs, frontend displays UIs, and optional worker processes handle background tasks.
+This is a complete website redesign for Heart & Soul, a soul food restaurant in Pueblo, Colorado. The design focuses on creating a warm, inviting, and engaging user experience while maintaining the restaurant's authentic character.
+
+**Purpose:** Create a modern, mobile-responsive website that showcases the restaurant's menu, atmosphere, and story while making it easy for customers to find information and get in touch.
+
+## Design Overview
+
+### Color Palette
+The design uses warm, inviting colors that reflect the "Heart & Soul" brand:
+- **Primary Red:** #8B2635 (Deep burgundy for headers and accents)
+- **Secondary Burgundy:** #5C1A28 (Rich, darker tones)
+- **Accent Gold:** #D4AF37 (Warm gold for highlights)
+- **Warm Orange:** #E07A5F (Energetic accent color)
+- **Cream/Light Backgrounds:** #F4F1DE, #FAF8F3
+
+### Typography
+- **Headings:** Playfair Display (elegant serif font)
+- **Body Text:** Open Sans (clean, readable sans-serif)
+
+### Design Principles
+- Clean, modern layouts with ample white space
+- Mobile-first responsive design
+- Smooth animations and transitions
+- Engaging hover effects
+- Accessibility-focused navigation
 
 ## Features
-- Feature 1 — short description
-- Feature 2 — short description
-- Feature 3 — short description
 
-Add or remove features here to reflect the repository's functionality.
+- **Responsive Design** — Fully mobile-responsive across all devices
+- **Hero Section** — Eye-catching homepage with call-to-action buttons
+- **Interactive Menu** — Well-organized menu with categories and pricing
+- **Photo Gallery** — Grid-based gallery with hover overlays
+- **Contact Form** — Easy-to-use contact form with validation
+- **Smooth Animations** — Fade-in effects and smooth scrolling
+- **Mobile Navigation** — Hamburger menu for mobile devices
+- **SEO Optimized** — Semantic HTML and proper meta tags
 
-## Tech / Languages
-This repository contains code in the language(s) shown in the repository language breakdown on GitHub. Check the project files to confirm the exact stack (e.g., Node.js, Python, Go, React, etc.).
+## Tech Stack
 
-Add here:
-- Runtime(s) and version(s) (e.g., Node.js >=16, Python >=3.11)
-- Frameworks or major libraries used (e.g., Express, FastAPI, Next.js)
-- Any external services required (e.g., PostgreSQL, Redis, Stripe)
+This is a static website built with:
+- **HTML5** — Semantic markup
+- **CSS3** — Modern styling with CSS Grid and Flexbox
+- **Vanilla JavaScript** — No dependencies, pure JS for interactions
+- **Google Fonts** — Playfair Display & Open Sans
 
 ## Getting started
 
 ### Prerequisites
-List prerequisites and how to install them. Example:
-- Git
-- [Node.js](https://nodejs.org/) (if applicable)
-- [Python 3.11+](https://www.python.org/) (if applicable)
-- Database (Postgres, SQLite, etc.)
+- A modern web browser (Chrome, Firefox, Safari, Edge)
+- A local web server (optional, for development)
+- Git (for cloning the repository)
 
 ### Installation
-Clone the repository and follow language-specific instructions.
 
-Example (replace commands with the actual ones for this repo):
+Clone the repository:
 ```bash
 git clone https://github.com/zakith/heartandsoul.git
 cd heartandsoul
-# install dependencies (example)
-npm install
-# or for Python:
-# python -m venv venv
-# source venv/bin/activate
-# pip install -r requirements.txt
 ```
-
-### Configuration
-Document environment variables and configuration files required.
-
-Example:
-- Create a `.env` in the project root:
-```
-DATABASE_URL=postgres://user:pass@localhost:5432/dbname
-SECRET_KEY=replace-with-a-secret
-PORT=3000
-```
-
-Add any other config (API keys, OAuth credentials) and where to obtain them.
 
 ### Run locally
-Provide commands to start the app locally.
 
-Example:
+Since this is a static website, you can open the files directly in your browser or use a local web server:
+
+**Option 1: Direct File Access**
 ```bash
-# development
-npm run dev
+# Simply open index.html in your browser
+open index.html  # macOS
 # or
-npm start
-
-# for Python
-# uvicorn app.main:app --reload
+start index.html  # Windows
 ```
 
-## Usage
-Show example requests, screenshots, or sample outputs.
-
-- How to access the app: http://localhost:3000
-- Example API call:
+**Option 2: Python HTTP Server**
 ```bash
-curl -X GET "http://localhost:3000/api/health"
+# Python 3
+python -m http.server 8000
+
+# Then visit: http://localhost:8000
 ```
 
-Include any CLI utilities, arguments, or other common workflows.
-
-## Development
-Explain code style, branching model, and helpful developer scripts.
-
-- Branching: e.g., `main` for production, `develop` for ongoing work
-- Linting and formatting: e.g., `npm run lint`, `prettier`, `black`
-- Recommended editor settings (optional)
-
-Example scripts:
+**Option 3: Node.js HTTP Server**
 ```bash
-# run linters
-npm run lint
+# Install http-server globally
+npm install -g http-server
 
-# build
-npm run build
+# Run server
+http-server
+
+# Then visit: http://localhost:8080
 ```
 
-## Testing
-How to run tests and interpret results.
+## Pages
 
-Example:
+The website includes four main pages:
+
+1. **Home (`index.html`)** — Landing page with hero section, about section, featured dishes, and why choose us
+2. **Menu (`menu.html`)** — Complete menu with main dishes, sides, desserts, and beverages
+3. **Gallery (`gallery.html`)** — Photo gallery showcasing food and restaurant atmosphere
+4. **Contact (`contact.html`)** — Contact form, location info, hours, and FAQ section
+
+## Customization
+
+### Adding Images
+
+Replace the gradient placeholders with actual images:
+1. Add your images to the `images/` folder
+2. Update the background-image URLs in the HTML or CSS
+3. For the hero section, use: `images/hero-bg.jpg`
+4. For gallery items, update the `.gallery-image` divs
+
+### Updating Content
+
+- **Restaurant Info:** Edit contact information in all page footers
+- **Menu Items:** Modify items in `menu.html`
+- **Hours:** Update hours in footer sections
+- **Colors:** Adjust CSS variables in `css/styles.css` (`:root` section)
+
+### Contact Form Integration
+
+The contact form currently logs submissions to the console. To connect to a backend:
+1. Uncomment the fetch code in `js/script.js`
+2. Update the endpoint URL to your API
+3. Configure your backend to handle form submissions
+
+## Deployment
+
+### GitHub Pages
 ```bash
-npm test
-# or for pytest:
-pytest
+# Push to GitHub
+git push origin main
+
+# Enable GitHub Pages in repository settings
+# Set source to main branch
 ```
 
-Note any test coverage tools and how to generate coverage reports.
+### Netlify
+1. Connect your GitHub repository to Netlify
+2. Deploy automatically on push
+3. Custom domain setup available
 
-## Contributing
-Guidelines for contributors:
-
-1. Fork the repository.
-2. Create a feature branch: `git checkout -b feat/my-feature`
-3. Make changes with clear commits.
-4. Run tests and linters.
-5. Open a pull request describing your changes.
-
-Add code of conduct if you have one and any PR/issue templates.
+### Traditional Hosting
+1. Upload all files to your web server
+2. Ensure directory structure is maintained
+3. Point domain to `index.html`
 
 ## Roadmap
-Planned enhancements and ideas:
-- Short-term: feature A, improvement B
-- Mid-term: feature C
-- Long-term: goals and ambitions
 
-Link to issues or project board if applicable.
-
-## License
-Include license information. Example:
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+Planned enhancements:
+- **Image Integration** — Add real food photography
+- **Online Ordering** — Integrate with food delivery platforms
+- **Reservation System** — Add table booking functionality
+- **Blog Section** — Share recipes and restaurant news
+- **Accessibility Improvements** — Enhanced ARIA labels and keyboard navigation
 
 ## Contact
-Maintainer: zakith
+
+**Heart & Soul Restaurant**
+- Address: 123 Main Street, Pueblo, CO 81001
+- Phone: (719) 555-SOUL
+- Email: info@heartandsoulpueblo.com
+- Website: https://www.heartandsoulpueblo.com
+
+**Developer**
 - GitHub: https://github.com/zakith
-- Email: replace-with-contact@example.com (optional)
+- Repository: https://github.com/zakith/heartandsoul
 
 ---
 
-Notes / TODO:
-- Replace placeholder sections (purpose, tech stack, commands) with concrete info from the codebase.
-- Add badges (build, coverage, license) at the top once CI is configured.
-- Optionally attach screenshots or GIFs to demonstrate the UI.
+## Project Structure
+
+```
+heartandsoul/
+├── index.html          # Home page
+├── menu.html           # Menu page
+├── gallery.html        # Gallery page
+├── contact.html        # Contact page
+├── css/
+│   ├── styles.css      # Main stylesheet
+│   ├── menu.css        # Menu page styles
+│   ├── gallery.css     # Gallery page styles
+│   └── contact.css     # Contact page styles
+├── js/
+│   └── script.js       # Main JavaScript
+├── images/             # Image assets (placeholder)
+└── README.md           # This file
+```
+
+## Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+- Mobile browsers (iOS Safari, Chrome Mobile)
+
+---
+
+**Note:** This website currently uses gradient placeholders for images. Replace these with actual restaurant photography for production use.
