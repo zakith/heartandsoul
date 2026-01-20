@@ -1,5 +1,14 @@
 /* Heart and Soul Restaurant - Main Styles */
 
+/* Custom Font */
+@font-face {
+  font-family: 'Trend Sans';
+  src: url('https://static.parastorage.com/fonts/v2/5f456a47-a870-4626-bedc-13c20ea75b36/v1/trend-sans-w00-four.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   /* Color Palette - Warm and Inviting */
   --primary-red: #8B2635;
@@ -12,7 +21,7 @@
   --warm-gray: #5A5A5A;
 
   /* Typography */
-  --font-heading: 'Playfair Display', serif;
+  --font-heading: 'Trend Sans', sans-serif;
   --font-body: 'Open Sans', sans-serif;
 
   /* Spacing */
