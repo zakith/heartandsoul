@@ -41,22 +41,11 @@
     <section class="section" style="background-color: var(--light-cream);">
         <div class="container">
             <div class="gallery-grid">
-                <!-- Gallery Item 1 -->
-                <div class="gallery-item gallery-tall">
-                    <div class="gallery-image" style="background: linear-gradient(135deg, var(--warm-orange), var(--accent-gold));">
-                        <div class="image-placeholder">
-                            <span>Fried Chicken Plate</span>
-                        </div>
-                    </div>
-                    <div class="gallery-overlay">
-                        <h3>Southern Fried Chicken</h3>
-                        <p>Our signature dish</p>
-                    </div>
-                </div>
-
                 <!-- Gallery Item 2 -->
-                <div class="gallery-item">
-                    <div class="gallery-image" style="background: linear-gradient(135deg, var(--primary-red), var(--secondary-burgundy));">
+                <div class="gallery-item" data-gallery="2">
+                    <img src="images/gallery2.jpg" alt="Creamy Mac & Cheese" class="gallery-img"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, var(--primary-red), var(--secondary-burgundy)); display: none;">
                         <div class="image-placeholder">
                             <span>Mac & Cheese</span>
                         </div>
@@ -68,8 +57,10 @@
                 </div>
 
                 <!-- Gallery Item 3 -->
-                <div class="gallery-item">
-                    <div class="gallery-image" style="background: linear-gradient(135deg, var(--primary-teal), var(--deep-charcoal));">
+                <div class="gallery-item gallery-tall" data-gallery="3">
+                    <img src="images/gallery3.jpg" alt="BBQ Ribs" class="gallery-img"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, var(--primary-teal), var(--deep-charcoal)); display: none;">
                         <div class="image-placeholder">
                             <span>BBQ Ribs</span>
                         </div>
@@ -81,8 +72,10 @@
                 </div>
 
                 <!-- Gallery Item 4 -->
-                <div class="gallery-item gallery-wide">
-                    <div class="gallery-image" style="background: linear-gradient(135deg, var(--primary-teal), var(--near-black));">
+                <div class="gallery-item gallery-wide" data-gallery="4">
+                    <img src="images/gallery4.jpg" alt="Our Cozy Dining Room" class="gallery-img"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, var(--primary-teal), var(--near-black)); display: none;">
                         <div class="image-placeholder">
                             <span>Restaurant Interior</span>
                         </div>
@@ -94,8 +87,10 @@
                 </div>
 
                 <!-- Gallery Item 5 -->
-                <div class="gallery-item">
-                    <div class="gallery-image" style="background: linear-gradient(135deg, #00CDB8, var(--deep-charcoal));">
+                <div class="gallery-item" data-gallery="5">
+                    <img src="images/gallery5.jpg" alt="Sweet Potato Pie" class="gallery-img"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #00CDB8, var(--deep-charcoal)); display: none;">
                         <div class="image-placeholder">
                             <span>Sweet Potato Pie</span>
                         </div>
@@ -107,8 +102,10 @@
                 </div>
 
                 <!-- Gallery Item 6 -->
-                <div class="gallery-item">
-                    <div class="gallery-image" style="background: linear-gradient(135deg, var(--deep-charcoal), var(--near-black));">
+                <div class="gallery-item" data-gallery="6">
+                    <img src="images/gallery6.jpg" alt="Collard Greens" class="gallery-img"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, var(--deep-charcoal), var(--near-black)); display: none;">
                         <div class="image-placeholder">
                             <span>Collard Greens</span>
                         </div>
@@ -120,8 +117,10 @@
                 </div>
 
                 <!-- Gallery Item 7 -->
-                <div class="gallery-item gallery-tall">
-                    <div class="gallery-image" style="background: linear-gradient(135deg, var(--primary-teal), #008F84);">
+                <div class="gallery-item gallery-tall" data-gallery="7">
+                    <img src="images/gallery7.jpg" alt="Candied Yams" class="gallery-img"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, var(--primary-teal), #008F84); display: none;">
                         <div class="image-placeholder">
                             <span>Candied Yams</span>
                         </div>
@@ -133,8 +132,10 @@
                 </div>
 
                 <!-- Gallery Item 8 -->
-                <div class="gallery-item">
-                    <div class="gallery-image" style="background: linear-gradient(135deg, var(--primary-teal), var(--near-black));">
+                <div class="gallery-item" data-gallery="8">
+                    <img src="images/gallery8.jpg" alt="Fried Catfish" class="gallery-img"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, var(--primary-teal), var(--near-black)); display: none;">
                         <div class="image-placeholder">
                             <span>Catfish</span>
                         </div>
@@ -146,8 +147,10 @@
                 </div>
 
                 <!-- Gallery Item 9 -->
-                <div class="gallery-item">
-                    <div class="gallery-image" style="background: linear-gradient(135deg, #00CDB8, var(--primary-teal));">
+                <div class="gallery-item" data-gallery="9">
+                    <img src="images/gallery9.jpg" alt="Fresh Cornbread" class="gallery-img"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="gallery-image" style="background: linear-gradient(135deg, #00CDB8, var(--primary-teal)); display: none;">
                         <div class="image-placeholder">
                             <span>Cornbread</span>
                         </div>
@@ -157,48 +160,26 @@
                         <p>Baked daily</p>
                     </div>
                 </div>
-
-                <!-- Gallery Item 10 -->
-                <div class="gallery-item gallery-wide">
-                    <div class="gallery-image" style="background: linear-gradient(135deg, #00CDB8, var(--light-gray));">
-                        <div class="image-placeholder">
-                            <span>Peach Cobbler</span>
-                        </div>
-                    </div>
-                    <div class="gallery-overlay">
-                        <h3>Peach Cobbler</h3>
-                        <p>Warm and comforting</p>
-                    </div>
-                </div>
-
-                <!-- Gallery Item 11 -->
-                <div class="gallery-item">
-                    <div class="gallery-image" style="background: linear-gradient(135deg, var(--near-black), var(--deep-charcoal));">
-                        <div class="image-placeholder">
-                            <span>Oxtails</span>
-                        </div>
-                    </div>
-                    <div class="gallery-overlay">
-                        <h3>Braised Oxtails</h3>
-                        <p>Melt-in-your-mouth</p>
-                    </div>
-                </div>
-
-                <!-- Gallery Item 12 -->
-                <div class="gallery-item">
-                    <div class="gallery-image" style="background: linear-gradient(135deg, var(--primary-teal), #009688);">
-                        <div class="image-placeholder">
-                            <span>Red Velvet Cake</span>
-                        </div>
-                    </div>
-                    <div class="gallery-overlay">
-                        <h3>Red Velvet Cake</h3>
-                        <p>Decadent dessert</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+        <button class="lightbox-prev" aria-label="Previous image">&#10094;</button>
+        <button class="lightbox-next" aria-label="Next image">&#10095;</button>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="">
+            <div class="lightbox-caption">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-description"></p>
+            </div>
+        </div>
+        <div class="lightbox-counter">
+            <span id="lightbox-current">1</span> / <span id="lightbox-total">8</span>
+        </div>
+    </div>
 
     <!-- Instagram Section -->
     <section class="section" style="background-color: white;">
